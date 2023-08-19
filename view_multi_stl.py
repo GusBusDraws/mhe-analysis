@@ -11,6 +11,13 @@ import sys
 
 SHOW_WIREFRAME = False
 
+def help():
+    print(
+        'To view multiple STL files in a single Open3D window,'
+        ' enter the following command:'
+    )
+    print('python -m view_mult_stl -i <Path to STL file directory>')
+
 def handle_args(args):
     """Function for plotting all the STL files in a directory.
     ----------
@@ -30,12 +37,13 @@ def handle_args(args):
                     # iter_size=100,
                 )
             else:
-                print('Warning: Only "-i" flag allowed.')
+                help()
+        elif args[0] == '-h':
+            help()
+            return
         else:
-            print('Specify STL directory after "-i" flag.')
-    except IndexError:
-        print('You must use the "-i" flag to specify STL directory.')
-    finally:
+            help()
+            return
         if len(meshes) != 0:
             o3d.visualization.draw_geometries(
                 meshes,
@@ -45,6 +53,9 @@ def handle_args(args):
             )
         else:
             print('No meshes loaded.')
+    except IndexError:
+        print('Enter the following command for help:')
+        print('python -m view_multi_stl -h')
 
 def load_stl_meshes(
         stl_dir_path,
