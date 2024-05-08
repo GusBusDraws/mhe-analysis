@@ -3,7 +3,7 @@ This project is for the analysis of CT data obtained by Yeager et al. at Los Ala
 
 Questions should be directed to C. Gus Becker (GitHub/GitLab: @cgusb).
 
-# Procedure description
+## Procedure description
 Segmentation procedure operates on the 2D slices. Current approach will be to adapt the procedure published by [Wälhby et al. 2004](https://onlinelibrary.wiley.com/doi/full/10.1111/j.0022-2720.2004.01338.x)* as follows:
 
 - (A) Smooth image. 
@@ -17,3 +17,9 @@ Segmentation procedure operates on the 2D slices. Current approach will be to ad
 - (I) Combine segmentation results based on intensity, edge and shape information.
 
 <div class="csl-entry">* Wälhby, C., Sintorn, I. M., Erlandsson, F., Borgefors, G., &#38; Bengtsson, E. (2004). Combining intensity, edge and shape information for 2D and 3D segmentation of cell nuclei in tissue sections. <i>Journal of Microscopy</i>, <i>215</i>(1), 67–76. https://doi.org/10.1111/J.0022-2720.2004.01338.X</div>
+
+## Change log
+### 2024-05-08
+- Add NB 44 for creating frames of a slice-through animation of a sample.
+- Add Change Log to README
+
