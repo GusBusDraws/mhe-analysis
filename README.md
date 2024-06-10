@@ -20,6 +20,7 @@ Segmentation procedure operates on the 2D slices. Current approach will be to ad
 
 ## Change log
 ### 2024-06-10
+- NB 45: Add smoothing viz
 - NB 45: Smooth hard corners by conditionally removing points
 ### 2024-06-06
 - NB 45: Pad labeled image boundaries along borders are captured
