@@ -19,8 +19,11 @@ Segmentation procedure operates on the 2D slices. Current approach will be to ad
 <div class="csl-entry">* Wälhby, C., Sintorn, I. M., Erlandsson, F., Borgefors, G., &#38; Bengtsson, E. (2004). Combining intensity, edge and shape information for 2D and 3D segmentation of cell nuclei in tissue sections. <i>Journal of Microscopy</i>, <i>215</i>(1), 67–76. https://doi.org/10.1111/J.0022-2720.2004.01338.X</div>
 
 ## Change log
+### 2024-06-06
+- NB 45: Pad labeled image boundaries along borders are captured
+- NB 45: Remove step excluding regions along borders
 ### 2024-06-05
-- NB 45: reorder points by nearest instead of polar angle.
+- NB 45: Reorder points by nearest instead of polar angle.
 - Add NB 45 for getting the subpixel boundaries of segmented regions.
 ### 2024-06-04
 - Add NB 45 for creating frames of a slice-through animation of a sample.
