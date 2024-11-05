@@ -19,6 +19,8 @@ Segmentation procedure operates on the 2D slices. Current approach will be to ad
 <div class="csl-entry">* Wälhby, C., Sintorn, I. M., Erlandsson, F., Borgefors, G., &#38; Bengtsson, E. (2004). Combining intensity, edge and shape information for 2D and 3D segmentation of cell nuclei in tissue sections. <i>Journal of Microscopy</i>, <i>215</i>(1), 67–76. https://doi.org/10.1111/J.0022-2720.2004.01338.X</div>
 
 ## Change log
+### 2024-11-05
+- NB 47: load DIC data as image
 ### 2024-11-04
 - Add NB 47 for loading DIC data
 ### 2024-08-05
