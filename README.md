@@ -20,6 +20,7 @@ Segmentation procedure operates on the 2D slices. Current approach will be to ad
 
 ## Change log
 ### 2024-11-05
+- NB 47: iterate across regions
 - NB 47: load DIC data as image
 ### 2024-11-04
 - Add NB 47 for loading DIC data
