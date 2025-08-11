@@ -19,9 +19,11 @@ Segmentation procedure operates on the 2D slices. Current approach will be to ad
 <div class="csl-entry">* Wälhby, C., Sintorn, I. M., Erlandsson, F., Borgefors, G., &#38; Bengtsson, E. (2004). Combining intensity, edge and shape information for 2D and 3D segmentation of cell nuclei in tissue sections. <i>Journal of Microscopy</i>, <i>215</i>(1), 67–76. https://doi.org/10.1111/J.0022-2720.2004.01338.X</div>
 
 ## Change log
-### 2024-08-05
-- Add NB 46 for developing a radial_filter function
-### 2024-05-08
-- Add NB 44 for creating frames of a slice-through animation of a sample.
-- Add Change Log to README
+### ct-verif
+2025-08-11: Add NB 49 to develop workflow for CT verification paper
+
+### Previous branches
+2024-08-05: Add NB 46 for developing a radial_filter function
+2024-05-08: Add NB 44 for creating frames of a slice-through animation of a sample.
+2024-05-08: Add Change Log to README
 
