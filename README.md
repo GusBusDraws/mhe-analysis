@@ -20,6 +20,7 @@ Segmentation procedure operates on the 2D slices. Current approach will be to ad
 
 ## Change log
 ### ct-verif
+2025-08-12: Update resolution calculations and full grain particle estimations
 2025-08-11: Add NB 49 to develop workflow for CT verification paper
 
 ### Previous branches
