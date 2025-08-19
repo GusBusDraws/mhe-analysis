@@ -20,6 +20,7 @@ Segmentation procedure operates on the 2D slices. Current approach will be to ad
 
 ## Change log
 ### merge-regions
+2025-08-19: Add NB 51 for downsampling & segmenting the prill for testing
 2025-08-12: Create concatenated CSV file with combined info about split segmentations
 2025-08-12: Add NB 50 to continue with development that started in NB 40
 2025-08-12: Rename old branch `dev-region-merging` and merge changes from `main`
