@@ -1,22 +1,22 @@
-# MHE Analysis
-This project is for the analysis of CT data obtained by Yeager et al. at Los Alamos National Lab (LANL). This CT data consists of 2D image slices showing IDOX crystals within a binder material. The goal of this analysis is to develop a procedure for segmenting the IDOX crystals from each other and from the binder material.
+# Image Analysis Dev
+This project is for developing image analysis and segmentation routines for
+research efforts related to the
+[Multidisciplinary Simulation Center](https://micromorph.gitlab.io/)*,
+with which Gus has been associated as a PhD student at Colorado School of Mines
+and as a Research Associate at the University of Colorado Boulder.
+Much of the associated data are 3D computed tomography scans,
+consisting of 2D image slice making up a 3D volume. Most of these data
+represent material systems are crystalline particulates in a polymeric binder
+matrix. Often the goal of these analyses are to better improve the segmentation
+of the particulate materials (which vary drastically in size) from the binder
+and void space to create 3D surfaces that can be used to initialize physics
+simulations.
 
-Questions should be directed to C. Gus Becker (GitHub/GitLab: @cgusb).
-
-## Procedure description
-Segmentation procedure operates on the 2D slices. Current approach will be to adapt the procedure published by [Wälhby et al. 2004](https://onlinelibrary.wiley.com/doi/full/10.1111/j.0022-2720.2004.01338.x)* as follows:
-
-- (A) Smooth image.
-- (B) Calculate gradient magnitude of A.
-- (C) Calculate foreground seeds found by extended h-maxima transformation.
-- (D) Calculate background seeds found by extended h-maxima transformation of the gradient magnitude image followed by removal of small components.
-- (E) Calculate seeded watershed segmentation.
-- (F) Merge seeded objects based on edge strength. Poorly focused objects are also removed in this step.
-- (G) Calculate distance transform of the objects in the segmented image. The brighter the intensity the further the pixel is from the background or a neighboring object.
-- (H) Calculate watershed segmentation of the distance transform before merging.
-- (I) Combine segmentation results based on intensity, edge and shape information.
-
-<div class="csl-entry">* Wälhby, C., Sintorn, I. M., Erlandsson, F., Borgefors, G., &#38; Bengtsson, E. (2004). Combining intensity, edge and shape information for 2D and 3D segmentation of cell nuclei in tissue sections. <i>Journal of Microscopy</i>, <i>215</i>(1), 67–76. https://doi.org/10.1111/J.0022-2720.2004.01338.X</div>
+\*The full name of the research center is:
+The Predictive Science Academic Alliance Program (PSAAP)
+Multi-disciplinary Simulation Center (MSC) for
+Micromorphic Multiphysics Porous and Particulate Materials Simulations
+Within Exascale Computing Workflows
 
 ## Change log
 ### merge-regions
